@@ -1,3 +1,10 @@
+import sys
+
+n = int(sys.argv[1])
+if (n<1):
+    print('Program must be run followed by integer argument n, where n > 1)
+    return
+
 p={}
 p[(1,1)] = 'B'
 p[(1,2)] = 'B'
