@@ -1,9 +1,17 @@
 import sys
 
-n = int(sys.argv[1])
+try:
+    n = int(sys.argv[1])
+except:
+    print('Program must be run followed by integer argument n, where n > 1')
+    exit()
+
 if (n<1):
     print('Program must be run followed by integer argument n, where n > 1')
     exit()
+
+
+
 
 p={}
 p[(1,1)] = 'B'
