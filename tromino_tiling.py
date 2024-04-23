@@ -2,8 +2,8 @@ import sys
 
 n = int(sys.argv[1])
 if (n<1):
-    print('Program must be run followed by integer argument n, where n > 1)
-    return
+    print('Program must be run followed by integer argument n, where n > 1')
+    exit()
 
 p={}
 p[(1,1)] = 'B'
@@ -40,13 +40,12 @@ for k, v in p.items():
 
 n=input('n=')
 def create_tromino(n):
-      p={}
-      if n==1:
-            p[(1,1)] = 'G'
-            p[(1,2)] = 'X'
-            p[(2,1)] = 'G'
-            p[(2,2)] = 'G'
-            return p
-      if n==2:
-            
-            
+    p={}
+    if n==1:
+        p[(1,1)] = 'G'
+        p[(1,2)] = 'X'
+        p[(2,1)] = 'G'
+        p[(2,2)] = 'G'
+        return p
+    if n==2:
+        return
